@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordLink - Destek & Yardım</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #00D9C0 0%, #00B4A0 100%);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 32px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 8px 24px rgba(0, 217, 192, 0.4);
+        }
+
+        .app-icon span {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            font-size: 14px;
+        }
+
+        .app-icon span div {
+            background: rgba(255,255,255,0.3);
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-size: 11px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #00D9C0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #00D9C0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        .faq-answer {
+            color: #555;
+        }
+
+        .faq-answer ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .faq-answer li {
+            margin-bottom: 5px;
+        }
+
+        .game-modes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .mode-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .mode-card h4 {
+            color: #00D9C0;
+            margin-bottom: 5px;
+        }
+
+        .mode-card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #00D9C0 0%, #00B4A0 100%);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .contact-section h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .email-btn {
+            display: inline-block;
+            background: white;
+            color: #00B4A0;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .email-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .response-time {
+            margin-top: 15px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .game-modes {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="app-icon">
+                    <span>
+                        <div>W</div><div>O</div><div>R</div>
+                        <div>D</div><div style="background:#FFD700;color:#1a1a2e;">8</div><div>K</div>
+                    </span>
+                </div>
+                <h1>WordLink</h1>
+                <p class="subtitle">Destek & Yardım Merkezi</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">📖 Nasıl Oynanır?</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">WordLink nedir?</div>
+                    <div class="faq-answer">
+                        WordLink, Türkçe kelime bulmaca oyunudur. Grid üzerinde gizlenmiş kelimeleri bulup, harfleri sürükleyerek işaretlemeniz gerekir. Kelimeler yatay, dikey ve çapraz yönlerde gizlenmiş olabilir.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Oyun modları nelerdir?</div>
+                    <div class="faq-answer">
+                        <div class="game-modes">
+                            <div class="mode-card">
+                                <h4>Klasik Mod</h4>
+                                <p>8 yönde kelime arayın. Süre sınırı yok, rahatça oynayın.</p>
+                            </div>
+                            <div class="mode-card">
+                                <h4>Snake Mod</h4>
+                                <p>4 yönde, yılan gibi kıvrılarak kelime bulun. L ve U şekilleri oluşturun.</p>
+                            </div>
+                            <div class="mode-card">
+                                <h4>Meydan Okuma</h4>
+                                <p>Süre sınırlı! Hızlı düşünün ve kombo yaparak puan toplayın.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Kelimeyi nasıl bulurum?</div>
+                    <div class="faq-answer">
+                        İlk harfe dokunun ve parmağınızı kelimenin son harfine kadar sürükleyin. Doğru kelimeyi bulduğunuzda harfler renklenecek ve puan kazanacaksınız.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">🎯 İpuçları & Stratejiler</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Daha iyi oynamak için ne yapabilirim?</div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>Önce kısa kelimeleri bulun - daha kolay görünürler</li>
+                            <li>Çapraz yönleri kontrol etmeyi unutmayın</li>
+                            <li>Snake modda L ve U şekillerini arayın</li>
+                            <li>Meydan Okuma'da kombo yaparak bonus süre kazanın</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Jeton sistemi nasıl çalışır?</div>
+                    <div class="faq-answer">
+                        Klasik ve Snake modlarda kelime bularak jeton kazanırsınız. Bu jetonları Meydan Okuma modunda ek süre satın almak için kullanabilirsiniz. Ayrıca ödüllü reklam izleyerek de jeton kazanabilirsiniz.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">⚙️ Teknik Destek</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Oyun yavaş çalışıyor veya donuyor</div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>Uygulamayı tamamen kapatıp yeniden açın</li>
+                            <li>Cihazınızda yeterli boş alan olduğundan emin olun</li>
+                            <li>App Store'dan en son sürümü indirin</li>
+                            <li>Sorun devam ederse cihazınızı yeniden başlatın</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">İlerleme kaydım silindi</div>
+                    <div class="faq-answer">
+                        İlerlemeniz cihazınızda yerel olarak saklanır. Uygulamayı silip yeniden yüklerseniz veya farklı bir cihaza geçerseniz, maalesef ilerlemeniz aktarılamaz. Kişisel veri toplamadığımız için bulut senkronizasyonu sunmuyoruz.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Uygulama açılmıyor</div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>iOS sürümünüzün uyumlu olduğundan emin olun (iOS 12.0+)</li>
+                            <li>Yeterli depolama alanınız olduğunu kontrol edin</li>
+                            <li>Cihazınızı yeniden başlatmayı deneyin</li>
+                            <li>Sorun devam ederse uygulamayı silip yeniden yükleyin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">🏆 Liderlik Tablosu</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Liderlik tablosu nasıl çalışır?</div>
+                    <div class="faq-answer">
+                        Meydan Okuma modunda elde ettiğiniz en yüksek puanlar liderlik tablosunda gösterilir. Diğer oyuncularla yarışın ve zirveye ulaşın! Kullanıcı adınızı profilinizden değiştirebilirsiniz.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">🛡️ Gizlilik & Veri</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Uygulama hangi verileri toplar?</div>
+                    <div class="faq-answer">
+                        WordLink, gizliliğinize önem verir. Kişisel bilgilerinizi toplamıyor, etkinliklerinizi izlemiyor ve hesap oluşturmanızı gerektirmiyoruz. Tüm oyun ilerlemeniz cihazınızda yerel olarak saklanır. Liderlik tablosu için yalnızca kullanıcı adınız ve puanınız anonim olarak kaydedilir.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Reklamlar var mı?</div>
+                    <div class="faq-answer">
+                        Evet, WordLink ücretsiz bir oyun olduğu için reklam içerir. Banner reklamlar oyun sırasında gösterilir. Ayrıca isteğe bağlı olarak ödüllü reklam izleyerek bonus jeton kazanabilirsiniz. Ödüllü reklamlar tamamen isteğe bağlıdır.
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h3>📧 Daha Fazla Yardıma mı İhtiyacınız Var?</h3>
+                <p>Aradığınızı bulamadınız mı? Size yardımcı olmaktan mutluluk duyarız!</p>
+                <a href="mailto:ersankolay@gmail.com?subject=WordLink%20Destek" class="email-btn">E-posta Gönder</a>
+                <p class="response-time">Genellikle 24-48 saat içinde yanıt veriyoruz.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 WordLink. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+</body>
+</html>
