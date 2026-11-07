@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Puzzle Master — Privacy Policy</title>
+<title>Num Connect — Privacy Policy</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   body{
@@ -51,9 +51,9 @@
 <div class="card">
 
 <header>
-  <h1>Puzzle Master</h1>
+  <h1>Num Connect</h1>
   <p class="subtitle" data-en="Privacy Policy" data-tr="Gizlilik Politikası">Privacy Policy</p>
-  <p class="updated" data-en="Effective date: 26 August 2026" data-tr="Yürürlük tarihi: 26 Ağustos 2026">Effective date: 26 August 2026</p>
+  <p class="updated" data-en="Effective date: 7 November 2026 (version 11)" data-tr="Yürürlük tarihi: 7 Kasım 2026 (sürüm 11)">Effective date: 7 November 2026 (version 11)</p>
 </header>
 
 <div class="langbar">
@@ -66,10 +66,10 @@
 
   <section>
     <h2>Summary</h2>
-    <p>Puzzle Master (also listed as Num Connect) is a free puzzle game published by Ersan Kolay. You can play it without creating an account and without giving us your name, e-mail address or phone number.</p>
-    <p>To save your progress, place you on leaderboards and show ads, the app does collect some technical information. This page explains exactly what, why, and who else receives it.</p>
+    <p>Num Connect (on the App Store previously listed as "Puzzle Master") is a free number-path puzzle game published by Ersan Kolay. You play without signing in, and we never ask for your name, e-mail address or phone number.</p>
+    <p>To check your solutions, show you how fast you solved a level compared with other players, tune the difficulty of the levels, find bugs and show ads, the app sends some technical information to our own game server and to Google AdMob. This page explains exactly what, why and who receives it.</p>
     <div class="note">
-      <strong>We never ask for and never collect:</strong> your name, e-mail address, phone number, postal address, payment details, precise location, contacts, photos, or health data.
+      <strong>We never ask for and never collect:</strong> your name, e-mail address, phone number, postal address, payment details, precise location, contacts, photos or health data.
     </div>
   </section>
 
@@ -78,83 +78,52 @@
     <table>
       <thead><tr><th>Data</th><th>Why</th><th>Where it goes</th></tr></thead>
       <tbody>
-        <tr>
-          <td><strong>Anonymous account ID</strong><br>A random identifier created on first launch</td>
-          <td>Saves your progress and identifies you on leaderboards and in duels</td>
-          <td>Firebase Authentication (Google)</td>
-        </tr>
-        <tr>
-          <td><strong>Game data</strong><br>Puzzles solved, solve times, points, XP, level, daily streak, achievements, league, duel results, and an automatically generated display name such as “Nimble Dragon #0784”</td>
-          <td>Progress, global leaderboards, leagues and friend duels</td>
-          <td>Firebase Realtime Database (Google)</td>
-        </tr>
-        <tr>
-          <td><strong>Online status</strong><br>A temporary flag while the app is open</td>
-          <td>Shows how many players are currently online</td>
-          <td>Firebase Realtime Database (Google); removed automatically when you close the app</td>
-        </tr>
-        <tr>
-          <td><strong>Usage and diagnostics</strong><br>App launches, screen views, session length, device model, operating system version, app version, country</td>
-          <td>Understanding which parts of the game are used and finding crashes</td>
-          <td>Firebase Analytics (Google)</td>
-        </tr>
-        <tr>
-          <td><strong>Advertising identifier</strong><br>IDFA on iOS, Advertising ID on Android</td>
-          <td>Showing ads and measuring them</td>
-          <td>Google AdMob</td>
-        </tr>
-        <tr>
-          <td><strong>Ad interaction data</strong><br>Ads shown, taps, and approximate region derived from your IP address</td>
-          <td>Ad delivery, frequency capping and fraud prevention</td>
-          <td>Google AdMob</td>
-        </tr>
-        <tr>
-          <td><strong>Settings stored on your device</strong><br>Preferences, local progress cache, hint count</td>
-          <td>Keeping the app usable offline</td>
-          <td>Stays on your device only — never sent to us</td>
-        </tr>
+        <tr><td><strong>Anonymous player ID</strong><br>A random identifier created on first launch (not your device's hardware ID)</td><td>Signs the app in to our game server and keeps your solve times and statistics together</td><td>Our game server</td></tr>
+        <tr><td><strong>Gameplay data</strong><br>Levels started and solved, solve time, the path you drew, hints used, undo and restart counts, how many cells you drew and erased</td><td>Checks that a solution is valid, shows "You're in the fastest X%", and helps us make levels neither too easy nor too frustrating</td><td>Our game server</td></tr>
+        <tr><td><strong>Usage and diagnostics</strong><br>App version and build, device model, operating system version, language, network type (Wi-Fi or mobile), session start, end and length, error messages (with file paths removed), and the country derived from your IP address</td><td>Finding crashes and bugs, understanding which parts of the game are used</td><td>Our game server (your IP address itself is not stored in our database)</td></tr>
+        <tr><td><strong>Advertising identifier</strong><br>IDFA on iPhone and iPad (only if you allow tracking), Advertising ID on Android</td><td>Showing ads and measuring them</td><td>Google AdMob</td></tr>
+        <tr><td><strong>Ad interaction data</strong><br>Ads requested and shown, whether a rewarded ad was watched to the end, approximate region</td><td>Ad delivery, frequency capping and fraud prevention. We also record ad events (without any advertising identifier) on our server to see how often hint ads are used</td><td>Google AdMob; our game server</td></tr>
+        <tr><td><strong>Stored on your device only</strong><br>Your progress, settings, downloaded levels and which levels have hints unlocked</td><td>Playing offline</td><td>Stays on your device; never sent to us</td></tr>
       </tbody>
     </table>
-    <p>The app also includes Google’s Firebase Cloud Messaging library. We do not currently send push notifications, but the library may generate a device messaging token. We do not use that token for any purpose.</p>
+    <p>Our game server is operated by Ersan Kolay on Oracle Cloud Infrastructure; connections to it pass through Cloudflare. Both act only as infrastructure providers on our behalf.</p>
   </section>
 
   <section>
     <h2>Advertising and your choices</h2>
-    <p>The app is free and is funded by ads served by Google AdMob.</p>
+    <p>The game is free and is funded by ads served by Google AdMob. You choose to watch a short rewarded ad to unlock the hints of a level; the first 10 levels have free hints. The game may also show a banner at the bottom of the play screen.</p>
     <h3>In the European Economic Area, the United Kingdom and Switzerland</h3>
-    <p>The first time you open the app you are shown a consent form provided by Google’s User Messaging Platform. You choose whether your data may be used for personalised ads. You can change that choice at any time from <em>Settings → Privacy → Privacy options</em> inside the app.</p>
+    <p>Before any ad is requested you are shown a consent form provided by Google's User Messaging Platform, and you decide whether your data may be used for personalised ads. You can change that choice at any time with <strong>Privacy options</strong> on the app's home screen.</p>
     <h3>On iPhone and iPad</h3>
-    <p>iOS asks you separately whether the app may track you across other companies’ apps and websites. If you decline, the advertising identifier is not shared for tracking and you will see non-personalised ads. You can change this in <em>iOS Settings → Privacy &amp; Security → Tracking</em>.</p>
+    <p>iOS asks you separately whether the app may track you across other companies' apps and websites. If you decline, the advertising identifier is not shared and you see non-personalised ads. You can change this in iOS Settings → Privacy &amp; Security → Tracking.</p>
     <h3>On Android</h3>
-    <p>You can reset or delete your Advertising ID in <em>Android Settings → Google → Ads</em>.</p>
+    <p>You can reset or delete your Advertising ID in Android Settings → Google → Ads (or Settings → Privacy → Ads).</p>
     <p>Non-personalised ads still require basic data such as your approximate region and the ad shown, in order to display an ad and prevent fraud.</p>
   </section>
 
   <section>
     <h2>Who else receives your data</h2>
-    <p>We do not sell your data and we do not share it with anyone other than the service providers below, which process it on our behalf:</p>
+    <p>We do not sell your data and we do not share it with anyone other than the service providers below:</p>
     <ul>
-      <li><strong>Google (Firebase)</strong> — authentication, database, analytics. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy information</a></li>
-      <li><strong>Google (AdMob)</strong> — advertising. <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses data from apps that use its services</a></li>
+      <li><strong>Google (AdMob)</strong> — advertising. <a href="https://policies.google.com/technologies/partner-sites">How Google uses data from apps that use its services</a></li>
+      <li><strong>Oracle Cloud Infrastructure</strong> and <strong>Cloudflare</strong> — hosting of and network access to our game server.</li>
     </ul>
-    <p>Data is stored on Google servers, including servers located in the European Union (europe-west1) and, for advertising, in other countries where Google operates.</p>
   </section>
 
   <section>
     <h2>How long we keep it</h2>
-    <ul>
-      <li>Game data and your anonymous profile are kept while the app is installed and for as long as the leaderboards reference them, unless you ask us to delete them.</li>
-      <li>Online-status records are deleted automatically the moment you close the app.</li>
-      <li>Analytics data is retained according to Google’s Firebase Analytics retention settings.</li>
-      <li>Deleting the app removes everything stored on your device.</li>
-    </ul>
+    <p>Your anonymous player ID, solve times and statistics are kept while your anonymous account exists. Usage and diagnostic events are kept for at most 24 months and then deleted. Deleting the app removes everything stored on your device.</p>
   </section>
 
   <section>
-    <h2>Your rights</h2>
+    <h2>Your rights and deleting your data</h2>
     <p>Depending on where you live, you may have the right to access, correct, delete or export your data, to object to processing, or to withdraw consent.</p>
-    <p>Because the app has no sign-in, we identify you only by the anonymous ID generated on your device. To have that profile and its game data deleted, e-mail <a href="mailto:ersankolay@gmail.com">ersankolay@gmail.com</a> from any address and include the display name shown on the app’s home screen (for example “Nimble Dragon #0784”). We will delete the data within 30 days.</p>
-    <p>You may also withdraw advertising consent at any time from <em>Settings → Privacy → Privacy options</em>.</p>
+    <p><strong>Delete my data</strong> on the app's home screen immediately deletes your anonymous account, your solve times, statistics and events from our server; the app then continues with a new anonymous ID. You can also e-mail <a href="mailto:ersankolay@gmail.com">ersankolay@gmail.com</a> and we will help within 30 days. Advertising consent can be changed at any time with <strong>Privacy options</strong>.</p>
+  </section>
+
+  <section>
+    <h2>Earlier versions</h2>
+    <p>Versions before 11.0 used Google Firebase (authentication, database and analytics) for leaderboards and duels. Version 11 no longer uses Firebase, leaderboards or duels; the old Firebase project will be shut down and its data deleted.</p>
   </section>
 
   <section>
@@ -164,12 +133,12 @@
 
   <section>
     <h2>Security</h2>
-    <p>Data is transmitted over encrypted connections and stored in Google Firebase, protected by access rules that allow each player to write only to their own records.</p>
+    <p>All data is transmitted over encrypted connections. Our game server is not directly reachable from the internet; it is only reachable through an encrypted Cloudflare tunnel, and each player can read and change only their own records.</p>
   </section>
 
   <section>
     <h2>Changes to this policy</h2>
-    <p>If we change what the app collects, we will update this page and change the effective date at the top. Significant changes will also be described in the app’s release notes.</p>
+    <p>If we change what the app collects, we will update this page and the effective date at the top. Significant changes will also be mentioned in the app's release notes.</p>
   </section>
 
   <section>
@@ -184,95 +153,64 @@
 
   <section>
     <h2>Özet</h2>
-    <p>Puzzle Master (mağazalarda Num Connect adıyla da geçer), Ersan Kolay tarafından yayınlanan ücretsiz bir bulmaca oyunudur. Hesap açmadan, adınızı, e-posta adresinizi veya telefon numaranızı vermeden oynayabilirsiniz.</p>
-    <p>İlerlemenizi kaydetmek, sizi sıralamalara yerleştirmek ve reklam göstermek için uygulama bir miktar teknik bilgi topluyor. Bu sayfa neyin, neden toplandığını ve kimlerle paylaşıldığını açıklıyor.</p>
+    <p>Num Connect (App Store'da önceden "Puzzle Master" adıyla listelenirdi), Ersan Kolay'ın yayınladığı ücretsiz bir sayı yolu bulmaca oyunudur. Giriş yapmadan oynarsınız; adınızı, e-posta adresinizi ya da telefon numaranızı asla sormayız.</p>
+    <p>Çözümlerinizi doğrulamak, bir bölümü diğer oyunculara göre ne kadar hızlı çözdüğünüzü göstermek, bölümlerin zorluğunu ayarlamak, hataları bulmak ve reklam göstermek için uygulama bazı teknik bilgileri kendi oyun sunucumuza ve Google AdMob'a gönderir. Bu sayfa neyin, neden toplandığını ve kimin aldığını açıklar.</p>
     <div class="note">
-      <strong>Hiçbir zaman istemediğimiz ve toplamadığımız bilgiler:</strong> adınız, e-posta adresiniz, telefon numaranız, posta adresiniz, ödeme bilgileriniz, kesin konumunuz, rehberiniz, fotoğraflarınız veya sağlık verileriniz.
+      <strong>Hiçbir zaman istemediğimiz ve toplamadığımız bilgiler:</strong> adınız, e-posta adresiniz, telefon numaranız, posta adresiniz, ödeme bilgileriniz, kesin konumunuz, rehberiniz, fotoğraflarınız ve sağlık verileriniz.
     </div>
   </section>
 
   <section>
     <h2>Toplanan veriler</h2>
     <table>
-      <thead><tr><th>Veri</th><th>Neden</th><th>Nereye gidiyor</th></tr></thead>
+      <thead><tr><th>Veri</th><th>Neden</th><th>Nereye gider</th></tr></thead>
       <tbody>
-        <tr>
-          <td><strong>Anonim hesap kimliği</strong><br>İlk açılışta üretilen rastgele bir tanımlayıcı</td>
-          <td>İlerlemenizi saklamak, sıralamalarda ve düellolarda sizi tanımak</td>
-          <td>Firebase Authentication (Google)</td>
-        </tr>
-        <tr>
-          <td><strong>Oyun verileri</strong><br>Çözülen bulmacalar, süreler, puan, XP, seviye, günlük seri, başarılar, lig, düello sonuçları ve “Nimble Dragon #0784” gibi otomatik üretilen görünen ad</td>
-          <td>İlerleme, küresel sıralama, ligler ve arkadaş düelloları</td>
-          <td>Firebase Realtime Database (Google)</td>
-        </tr>
-        <tr>
-          <td><strong>Çevrimiçi durumu</strong><br>Uygulama açıkken tutulan geçici bir işaret</td>
-          <td>Şu an kaç oyuncunun çevrimiçi olduğunu göstermek</td>
-          <td>Firebase Realtime Database (Google); uygulamayı kapattığınızda otomatik silinir</td>
-        </tr>
-        <tr>
-          <td><strong>Kullanım ve tanılama</strong><br>Açılış sayısı, görüntülenen ekranlar, oturum süresi, cihaz modeli, işletim sistemi sürümü, uygulama sürümü, ülke</td>
-          <td>Oyunun hangi bölümlerinin kullanıldığını anlamak ve hataları bulmak</td>
-          <td>Firebase Analytics (Google)</td>
-        </tr>
-        <tr>
-          <td><strong>Reklam kimliği</strong><br>iOS’ta IDFA, Android’de Reklam Kimliği</td>
-          <td>Reklam göstermek ve ölçmek</td>
-          <td>Google AdMob</td>
-        </tr>
-        <tr>
-          <td><strong>Reklam etkileşim verisi</strong><br>Gösterilen reklamlar, tıklamalar ve IP adresinden çıkarılan yaklaşık bölge</td>
-          <td>Reklam sunumu, gösterim sınırı ve sahtecilik önleme</td>
-          <td>Google AdMob</td>
-        </tr>
-        <tr>
-          <td><strong>Cihazınızda saklanan ayarlar</strong><br>Tercihler, yerel ilerleme, ipucu sayısı</td>
-          <td>Uygulamanın internetsiz de çalışabilmesi</td>
-          <td>Yalnızca cihazınızda kalır — bize gönderilmez</td>
-        </tr>
+        <tr><td><strong>Anonim oyuncu kimliği</strong><br>İlk açılışta üretilen rastgele bir tanımlayıcı (cihazınızın donanım kimliği değildir)</td><td>Uygulamanın oyun sunucumuza girişi; bölüm süreleriniz ve istatistikleriniz bu kimlikle bir arada tutulur</td><td>Oyun sunucumuz</td></tr>
+        <tr><td><strong>Oyun verisi</strong><br>Başlanan ve çözülen bölümler, çözüm süresi, çizdiğiniz yol, kullanılan ipuçları, geri alma ve baştan başlama sayıları, çizilen ve silinen hücre sayısı</td><td>Çözümün geçerli olduğunu doğrulamak, "En hızlı %X içindesin" bilgisini göstermek, bölümleri ne çok kolay ne sinir bozucu yapmak</td><td>Oyun sunucumuz</td></tr>
+        <tr><td><strong>Kullanım ve tanılama</strong><br>Uygulama sürümü ve yapısı, cihaz modeli, işletim sistemi sürümü, dil, ağ türü (Wi-Fi ya da mobil), oturum başlangıcı, bitişi ve süresi, hata iletileri (dosya yolları çıkarılmış olarak) ve IP adresinizden çıkarılan ülke</td><td>Çökmeleri ve hataları bulmak, oyunun hangi kısımlarının kullanıldığını anlamak</td><td>Oyun sunucumuz (IP adresinizin kendisi veritabanımızda saklanmaz)</td></tr>
+        <tr><td><strong>Reklam kimliği</strong><br>iPhone ve iPad'de IDFA (yalnız izlemeye izin verirseniz), Android'de Reklam Kimliği</td><td>Reklam göstermek ve ölçmek</td><td>Google AdMob</td></tr>
+        <tr><td><strong>Reklam etkileşim verisi</strong><br>İstenen ve gösterilen reklamlar, ödüllü reklamın sonuna kadar izlenip izlenmediği, yaklaşık bölge</td><td>Reklam sunumu, gösterim sıklığı sınırı ve sahtekârlığın önlenmesi. İpucu reklamlarının ne sıklıkta kullanıldığını görmek için reklam olaylarını (reklam kimliği olmadan) sunucumuzda da kaydederiz</td><td>Google AdMob; oyun sunucumuz</td></tr>
+        <tr><td><strong>Yalnız cihazınızda saklananlar</strong><br>İlerlemeniz, ayarlarınız, indirilen bölümler ve hangi bölümlerin ipuçlarının açıldığı</td><td>Çevrimdışı oynamak</td><td>Cihazınızda kalır; bize hiç gönderilmez</td></tr>
       </tbody>
     </table>
-    <p>Uygulama ayrıca Google’ın Firebase Cloud Messaging kitaplığını içeriyor. Şu anda anlık bildirim göndermiyoruz, ancak kitaplık bir cihaz mesajlaşma anahtarı üretebilir. Bu anahtarı hiçbir amaçla kullanmıyoruz.</p>
+    <p>Oyun sunucumuzu Ersan Kolay, Oracle Cloud Infrastructure üzerinde işletir; sunucuya bağlantılar Cloudflare üzerinden geçer. İkisi de yalnız bizim adımıza altyapı sağlayıcısı olarak çalışır.</p>
   </section>
 
   <section>
-    <h2>Reklamlar ve seçim hakkınız</h2>
-    <p>Uygulama ücretsizdir ve Google AdMob üzerinden sunulan reklamlarla finanse edilir.</p>
-    <h3>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de</h3>
-    <p>Uygulamayı ilk açtığınızda Google’ın Kullanıcı Mesajlaşma Platformu tarafından sağlanan bir rıza formu gösterilir. Verilerinizin kişiselleştirilmiş reklam için kullanılıp kullanılmayacağına siz karar verirsiniz. Bu tercihi istediğiniz zaman uygulama içinden <em>Ayarlar → Gizlilik → Gizlilik seçenekleri</em> yolundan değiştirebilirsiniz.</p>
-    <h3>iPhone ve iPad’de</h3>
-    <p>iOS ayrıca, uygulamanın sizi başka şirketlerin uygulama ve sitelerinde izleyip izleyemeyeceğini sorar. İzin vermezseniz reklam kimliğiniz izleme amacıyla paylaşılmaz ve kişiselleştirilmemiş reklam görürsünüz. Bu tercihi <em>iOS Ayarlar → Gizlilik ve Güvenlik → İzleme</em> bölümünden değiştirebilirsiniz.</p>
-    <h3>Android’de</h3>
-    <p>Reklam Kimliğinizi <em>Android Ayarlar → Google → Reklamlar</em> bölümünden sıfırlayabilir veya silebilirsiniz.</p>
-    <p>Kişiselleştirilmemiş reklamlar için bile, reklamın gösterilebilmesi ve sahteciliğin önlenmesi amacıyla yaklaşık bölge ve gösterilen reklam gibi temel veriler işlenir.</p>
+    <h2>Reklamlar ve seçimleriniz</h2>
+    <p>Oyun ücretsizdir ve Google AdMob reklamlarıyla finanse edilir. Bir bölümün ipuçlarını açmak için kısa bir ödüllü reklamı izlemeyi siz seçersiniz; ilk 10 bölümde ipuçları ücretsizdir. Oyun ekranının altında bir banner reklam da gösterilebilir.</p>
+    <h3>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de</h3>
+    <p>Herhangi bir reklam istenmeden önce Google'ın Kullanıcı Mesajlaşma Platformu'nun onay formu gösterilir ve verilerinizin kişiselleştirilmiş reklamlar için kullanılıp kullanılmayacağına siz karar verirsiniz. Bu seçimi istediğiniz zaman uygulamanın ana sayfasındaki <strong>Gizlilik seçenekleri</strong> ile değiştirebilirsiniz.</p>
+    <h3>iPhone ve iPad'de</h3>
+    <p>iOS, uygulamanın sizi diğer şirketlerin uygulama ve sitelerinde izleyip izleyemeyeceğini ayrıca sorar. Reddederseniz reklam kimliği paylaşılmaz ve kişiselleştirilmemiş reklamlar görürsünüz. Bunu iOS Ayarlar → Gizlilik ve Güvenlik → İzleme bölümünden değiştirebilirsiniz.</p>
+    <h3>Android'de</h3>
+    <p>Reklam Kimliğinizi Android Ayarlar → Google → Reklamlar (ya da Ayarlar → Gizlilik → Reklamlar) bölümünden sıfırlayabilir ya da silebilirsiniz.</p>
+    <p>Kişiselleştirilmemiş reklamlar da bir reklamı göstermek ve sahtekârlığı önlemek için yaklaşık bölgeniz ve gösterilen reklam gibi temel verilere ihtiyaç duyar.</p>
   </section>
 
   <section>
-    <h2>Verilerinizi başka kimler alıyor</h2>
-    <p>Verilerinizi satmıyoruz ve aşağıdaki hizmet sağlayıcılar dışında kimseyle paylaşmıyoruz. Bu sağlayıcılar veriyi bizim adımıza işler:</p>
+    <h2>Verilerinizi başka kim alır</h2>
+    <p>Verilerinizi satmayız ve aşağıdaki hizmet sağlayıcılar dışında kimseyle paylaşmayız:</p>
     <ul>
-      <li><strong>Google (Firebase)</strong> — kimlik doğrulama, veritabanı, analitik. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase gizlilik bilgileri</a></li>
-      <li><strong>Google (AdMob)</strong> — reklam. <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google’ın hizmetlerini kullanan uygulamalardan gelen veriyi nasıl kullandığı</a></li>
+      <li><strong>Google (AdMob)</strong>: reklam. <a href="https://policies.google.com/technologies/partner-sites">Google'ın, hizmetlerini kullanan uygulamalardan gelen verileri nasıl kullandığı</a></li>
+      <li><strong>Oracle Cloud Infrastructure</strong> ve <strong>Cloudflare</strong>: oyun sunucumuzun barındırılması ve ağ erişimi.</li>
     </ul>
-    <p>Veriler Google sunucularında saklanır; bunlara Avrupa Birliği’nde bulunan sunucular (europe-west1) ve reklam tarafında Google’ın faaliyet gösterdiği diğer ülkelerdeki sunucular dâhildir.</p>
   </section>
 
   <section>
     <h2>Ne kadar süre saklıyoruz</h2>
-    <ul>
-      <li>Oyun verileri ve anonim profiliniz, siz silinmesini istemediğiniz sürece uygulama kurulu olduğu ve sıralamalar bu kayıtlara atıf yaptığı sürece saklanır.</li>
-      <li>Çevrimiçi durum kayıtları, uygulamayı kapattığınız anda otomatik silinir.</li>
-      <li>Analitik veriler Google’ın Firebase Analytics saklama ayarlarına göre tutulur.</li>
-      <li>Uygulamayı silmeniz, cihazınızda saklanan her şeyi kaldırır.</li>
-    </ul>
+    <p>Anonim oyuncu kimliğiniz, bölüm süreleriniz ve istatistikleriniz anonim hesabınız var olduğu sürece saklanır. Kullanım ve tanılama olayları en çok 24 ay saklanır, sonra silinir. Uygulamayı silmek cihazınızda saklanan her şeyi kaldırır.</p>
   </section>
 
   <section>
-    <h2>Haklarınız</h2>
-    <p>Yaşadığınız ülkeye bağlı olarak verilerinize erişme, düzeltme, silme, taşıma, işlemeye itiraz etme veya rızanızı geri çekme hakkınız olabilir.</p>
-    <p>Uygulamada oturum açma olmadığı için sizi yalnızca cihazınızda üretilen anonim kimlikle tanıyoruz. Profilinizin ve oyun verilerinizin silinmesi için <a href="mailto:ersankolay@gmail.com">ersankolay@gmail.com</a> adresine, uygulamanın ana ekranında görünen adı (örneğin “Nimble Dragon #0784”) yazarak e-posta gönderin. Verileri 30 gün içinde sileriz.</p>
-    <p>Reklam rızanızı da istediğiniz zaman <em>Ayarlar → Gizlilik → Gizlilik seçenekleri</em> yolundan geri çekebilirsiniz.</p>
+    <h2>Haklarınız ve verilerinizin silinmesi</h2>
+    <p>Yaşadığınız yere göre verilerinize erişme, düzeltme, silme ya da dışa aktarma, işlemeye itiraz etme ya da onayınızı geri çekme hakkınız olabilir.</p>
+    <p>Uygulamanın ana sayfasındaki <strong>Verilerimi sil</strong>, anonim hesabınızı, bölüm sürelerinizi, istatistiklerinizi ve olaylarınızı sunucumuzdan hemen siler; uygulama ardından yeni bir anonim kimlikle devam eder. Ayrıca <a href="mailto:ersankolay@gmail.com">ersankolay@gmail.com</a> adresine yazabilirsiniz; 30 gün içinde yardımcı oluruz. Reklam onayınızı istediğiniz zaman <strong>Gizlilik seçenekleri</strong> ile değiştirebilirsiniz.</p>
+  </section>
+
+  <section>
+    <h2>Önceki sürümler</h2>
+    <p>11.0'dan önceki sürümler sıralamalar ve düellolar için Google Firebase'i (kimlik doğrulama, veritabanı ve analiz) kullanıyordu. Sürüm 11 artık Firebase, sıralama ya da düello kullanmaz; eski Firebase projesi kapatılacak ve verileri silinecektir.</p>
   </section>
 
   <section>
@@ -282,12 +220,12 @@
 
   <section>
     <h2>Güvenlik</h2>
-    <p>Veriler şifreli bağlantılar üzerinden aktarılır ve her oyuncunun yalnızca kendi kayıtlarına yazabilmesini sağlayan erişim kurallarıyla korunan Google Firebase’de saklanır.</p>
+    <p>Bütün veriler şifreli bağlantılarla iletilir. Oyun sunucumuza internetten doğrudan erişilemez; yalnız şifreli bir Cloudflare tüneliyle erişilebilir ve her oyuncu yalnız kendi kayıtlarını okuyup değiştirebilir.</p>
   </section>
 
   <section>
     <h2>Bu politikadaki değişiklikler</h2>
-    <p>Uygulamanın topladığı veriler değişirse bu sayfayı güncelleyip yukarıdaki yürürlük tarihini değiştireceğiz. Önemli değişiklikler ayrıca uygulamanın sürüm notlarında belirtilecek.</p>
+    <p>Uygulamanın topladıklarını değiştirirsek bu sayfayı ve üstteki yürürlük tarihini güncelleriz. Önemli değişiklikler uygulamanın sürüm notlarında da belirtilir.</p>
   </section>
 
   <section>
@@ -298,7 +236,7 @@
 </div>
 
 <footer>
-  <p>© 2026 Ersan Kolay · <a href="./">Puzzle Master</a></p>
+  <p>© 2026 Ersan Kolay · <a href="./">Num Connect</a></p>
 </footer>
 
 </div>
